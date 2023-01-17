@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-text-primary: #343a40;
+  --color-text-secondary: #74788d;
+  --color-header: #000000;
+  --background-color-body: #efefef;
+  --background-color: #ffffff;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "PT Serif", serif;
+}
+
+body {
+  background-color: var(--background-color-body);
+}
+.title {
+  font-family: var(--font-primary);
+  color: var(--color-header);
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 42px;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 42px;
+  margin-bottom: 48px;
+}
+.clothes {
+  font-family: var(--font-primary);
+}
+.clothes__products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clothes__product {
+  position: relative;
+  margin-top: 26px;
+  background-color: var(--background-color);
+  width: 338px;
+  height: 432px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.clothes__img {
+}
+
+.clothes__img > img {
+  width: 294px;
+  height: 263px;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+.clothes_discount {
+}
+.clothes__discount {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.clothes__item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+}
+.clothes__price {
+}
+.clothes__price-old {
+  display: inline-block;
+  color: var(--color-text-secondary);
+}
+.clothes__price-new {
+  display: inline-block;
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .clothes__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 24px;
+    width: 702px;
+    height: 1536px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .clothes__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 24px;
+    width: 1231px;
+    height: 1027px;
+  }
+}
